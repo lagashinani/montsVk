@@ -46,8 +46,8 @@ internal class MainKtTestMaps {
         //arrange
         val cardType1 = "Visa"
         val cardType2 = "Мир"
-        val amount = 750
-        val transferBefore = 3500
+        val amount = 1000000
+        val transferBefore = 999250
 
         //act
         val result1 = payAdditional(
@@ -64,8 +64,8 @@ internal class MainKtTestMaps {
 
         )
         //assert
-        assertEquals(750, result1)
-        assertEquals(750, result2)
+        assertEquals(7500, result1)
+        assertEquals(7500, result2)
     }
 
     @Test
@@ -73,8 +73,8 @@ internal class MainKtTestMaps {
         //arrange
         val cardType1 = "MasterCard"
         val cardType2 = "Maestro"
-        val amount = 100
-        val transferBefore = 500
+        val amount = 10000
+        val transferBefore = 7940
 
         //act
         val result1 = payAdditional(
@@ -93,8 +93,8 @@ internal class MainKtTestMaps {
 
         )
         //assert
-        assertEquals(0, result1)
-        assertEquals(0, result2)
+        assertEquals(2060, result1)
+        assertEquals(2060, result2)
     }
 
 
@@ -103,7 +103,7 @@ internal class MainKtTestMaps {
         //arrange
         val cardType1 = "MasterCard"
         val cardType2 = "Maestro"
-        val amount = 15000000
+        val amount = 100000
         val transferBefore = 0
 
         //act
