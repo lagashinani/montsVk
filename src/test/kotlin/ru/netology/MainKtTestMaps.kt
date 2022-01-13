@@ -20,7 +20,7 @@ internal class MainKtTestMaps {
             transferBefore = transferBefore
         )
         //assert
-        assertEquals(0, result)
+        assertEquals(11110, result)
 
     }
     @Test
